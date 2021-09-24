@@ -2,7 +2,7 @@
 # Create widgets for storage account name and key
 # for manual entering - not used
 
-dbutils.widgets.text("accountName", "", "Account Name")
+#dbutils.widgets.text("accountName", "", "Account Name")
 #dbutils.widgets.text("accountKey", "", "Account Key")
 
 
@@ -55,7 +55,7 @@ df.show(10)
 # COMMAND ----------
 
 #Now, you can save the Dataframe to a global table in Databricks. This will make the table accessible to all users and clusters in your Databricks workspace
-df.write.mode("overwrite").saveAsTable("SmartMeters")
+df.write.mode("overwrite").saveAsTable("SmartMetersN")
 
 
 # COMMAND ----------
