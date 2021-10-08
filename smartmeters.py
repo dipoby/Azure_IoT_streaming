@@ -9,8 +9,8 @@
 # COMMAND ----------
 
 # Get values entered into widgets
-accountName = dbutils.widgets.get("accountName")
-accountKey = dbutils.secrets.get(scope = "databricks-scope", key = "work")
+#accountName = dbutils.widgets.get("accountName")
+#accountKey = dbutils.secrets.get(scope = "databricks-scope", key = "work")
 container = "dv-papko"
 
 spark.conf.set("fs.azure.account.key.{0}.blob.core.windows.net".format(accountName), accountKey)
