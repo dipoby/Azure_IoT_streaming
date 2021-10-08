@@ -10,6 +10,7 @@
 
 # Get values entered into widgets
 #accountName = dbutils.widgets.get("accountName")
+accountName  = "godellabstorageaccount"
 #accountKey = dbutils.secrets.get(scope = "databricks-scope", key = "work")
 container = "dv-papko"
 
